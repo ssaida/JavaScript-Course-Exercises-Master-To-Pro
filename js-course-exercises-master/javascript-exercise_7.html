@@ -153,16 +153,15 @@ console.log('Final bitcoin balance is: ', btcAmount)
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        var btcAmount = +prompt("How many bit coins you'v been saved?");
-        if(btcAmount){
-          var withdraw = +prompt("how mnay to withdraw?");
-          if(btcAmount < withdraw){
-            alert('Insufficient balance');
+        let btcAmount = +prompt('Enter bitcoins saved:');
+        if(btcAmount > 0){
+          let withdraw = +prompt('How many bitcoins you like to withdraw?');
+          if(withdraw < btcAmount){
+            alert(`Final amount of coins: ${btcAmount - withdraw}`);
           }else{
-            btcAmount -= withdraw
+            alert("insufficient balance");
           }
         }
-        alert(`Final Balance ${btcAmount}`);
       };
     </script>
     <script>
