@@ -110,12 +110,12 @@
         </ul>
         <div id="result" style="display: none; width: 100%">
           <pre>
-						<code class="language-js">
-var numA = +prompt('Please enter numA')
-console.log(numA, 'Pow2 is:', numA * numA)
-var numB = +prompt('Please enter numB')
-var expo = +prompt('Please enter for expo')
-console.log(numB , ' with the power of ', expo , ' is:', numB ** expo)
+						   <code class="language-js">
+              var numA = +prompt('Please enter numA')
+              console.log(numA, 'Pow2 is:', numA * numA)
+              var numB = +prompt('Please enter numB')
+              var expo = +prompt('Please enter for expo')
+              console.log(numB , ' with the power of ', expo , ' is:', numB ** expo)
             </code>
 					</pre>
         </div>
@@ -130,15 +130,16 @@ console.log(numB , ' with the power of ', expo , ' is:', numB ** expo)
     </section>
 
     <script src="src/menu.min.js"></script>
-    <script src="src/util.min.js"></script>
+    <script src="src/util.min.js"></script> 
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-        var numA = +prompt('Enter a number:');
-        alert(numA ** 2);
-        var numB = +prompt('Enter num B:');
-        var expo = +prompt('Enter expo:');
-        alert(`${numB} with exponent power of ${expo} is ${numB ** expo}`);
+        let numA = +prompt('Enter num A:');
+        let result = Math.pow(numA, 2);
+        alert(result);
+        let numB = +prompt('Enter numB and expo:');
+        let expo = +prompt('Enter expo:');
+        alert(`${numB} with exponent power of ${expo} is: ${Math.pow(numB, expo)}`);
       };
     </script>
     <script>
