@@ -156,20 +156,6 @@ const getRandomNumber = () => {
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        const getRAndomNumber = (min, max) => {
-          min = Math.ceil(min);
-          max = Math.floor(max);
-          return Math.floor(Math.random() * (max - min + 1) + min);
-        }
-        const init = () => {
-          let min = +prompt('Enter Min');
-          let max = +prompt('Enter Max:');
-          console.log('Generate 10 Random numbers:')
-          for(let i=0;i<10;i++){
-            console.log(getRAndomNumber(min, max));
-          }
-        }
-        init();
       };
     </script>
     <script>
