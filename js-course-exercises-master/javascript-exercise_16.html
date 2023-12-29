@@ -180,38 +180,7 @@ init()
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-        /* TODO remove this line and start your answer */
-        let roulettMAxNumbers = 36;
-        
-        const getRandomNumber = (min, max) => {
-          min = Math.ceil(min);
-          max = Math.floor(max);
-          return Math.floor(Math.random() * (max - min + 1)) + min;
-        } 
-        const printRouletteNumbers = () => {
-          for(let i=0;i<roulettMAxNumbers;i++){
-            console.log(`${i} is ${evenOrOdd(i)}`);
-          }
-        }
-        const evenOrOdd = number => number%2 == 0 ? 'Even' : 'Odd';
-       
-        const init = () => {
-          printRouletteNumbers();
-          let luckyNumber = getRandomNumber(4 - 22);
-          let userLuckyNumber = +prompt('Enter lucky number');
-
-          console.log(`User lucky number ${userLuckyNumber}`);
-          console.log(`Lucky number ${luckyNumber}`);
-
-          if(luckyNumber === userLuckyNumber){
-            console.log('Won');
-          }else{
-            console.log('lose');
-          }
-        }
-        // Start
-        init();
-        
+        /* todo remove this line and start your answer */
       };
     </script>
     <script>
