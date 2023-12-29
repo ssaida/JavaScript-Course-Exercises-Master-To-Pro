@@ -152,7 +152,7 @@ getUserAge()
 
         <div class="lg">שאלות</div>
         <div class="questions-list lg"></div>
-      </div>
+      </div>  
     </section>
 
     <script src="src/menu.min.js"></script>
@@ -162,15 +162,7 @@ getUserAge()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        function getUserAge(){
-          let userAge = +prompt('Please enter age:');
-          let isAllowedWatching = isUserAllowedWatching(userAge);
-          alert(isAllowedWatching ? 'Allowed' : 'Not Allowed');
-        }
-        function isUserAllowedWatching(userAge){
-          return userAge > 13;
-        }
-        getUserAge();
+        
       };
     </script>
     <script>
