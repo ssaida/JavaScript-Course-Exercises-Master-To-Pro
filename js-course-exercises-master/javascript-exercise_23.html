@@ -168,22 +168,6 @@ console.log(
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        const palindrome = word => {
-          let palindromeWord = ``;
-          for(let i=word.length-1;i>=0;i--){
-            palindromeWord += word[i];
-          }
-          return word === palindromeWord;
-        }
-        const init = () => {
-          let str = prompt('Enter a word:').toLowerCase();
-          if(palindrome(str)){
-            console.log(`Ths word ${str} is palindrome`);
-          }else{
-            console.log(`Ths word ${str} is NOT palindrome`);
-          }
-        }
-        init();
       };
     </script>
     <script>
