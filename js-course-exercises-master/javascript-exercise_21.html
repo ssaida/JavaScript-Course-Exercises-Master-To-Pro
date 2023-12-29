@@ -173,29 +173,6 @@ init()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        const generateRandomPassword = passwordLength => {
-          let randomPasword = ``;
-          const availableChar = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890!@#$%^&*()'
-          for(let i=0;i<passwordLength;i++){
-            randomPasword += getRandomIntInclusive(1, availableChar.length - 1);
-          }
-          return randomPasword;
-        }
-        const getRandomIntInclusive = (min, max) => {
-          min = Math.ceil(min);
-          max = Math.floor(max);
-          return MAth.floor(Math.random() * (max - min + 1) + min);
-        }
-        const init = () => {
-          let lengthPassword = +prompt('Please enter length of password:');
-          if(!lengthPassword)
-            return
-          for(let i = 0; i<10;i++){
-            const randomPassword = generateRandomPassword(lengthPassword);
-            console.log(`Random Password is: ${randomPassword}`);
-          }
-        }
-        init();
       };
     </script>
     <script>
