@@ -190,26 +190,6 @@ init();
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        const countCharacters = word => {
-          let countA = 0;
-          let countB = 0;
-          let countC = 0;
-          let totalWithOutABC = 0;
-          for(let i=0;i<word.length;i++){
-            switch(word[i]){
-              case 'a':countA++;break;
-              case 'b':countB++;break;
-              case 'c':countC++;break;
-              default: totalWithOutABC++;
-            }
-          }
-          alert(`a: ${countA}, b: ${countB}, c: ${countC}, Others: ${totalWithOutABC}`);
-        }
-        const init = () => {
-          let randomSentence = prompt('Enter Random Sentence:');
-          countCharacters(randomSentence);
-        }
-        init();
       };
     </script>
     <script>
