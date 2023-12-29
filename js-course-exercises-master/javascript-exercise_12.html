@@ -160,19 +160,6 @@ getLuckyNumber()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        function getLuckyNumber(){
-          var luckyNum = getRandomNumber(0, 100);
-          var userNumber = +prompt('Ener a number:');
-          if(luckyNum === userNumber)
-            alert('Wow, you win the game');
-          else alert('Maybe next time')
-        }
-        function getRandomNumber(min, max){
-          min = Math.ceil(min);
-          max = Math.floor(max);
-          return Math.floor(Math.random() * (max - min) + 1);
-        }
-        getLuckyNumber();
       };
     </script>
     <script>
