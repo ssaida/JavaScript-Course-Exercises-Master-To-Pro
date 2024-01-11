@@ -161,6 +161,14 @@ myFunc(userNumber, myCallback)
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
+        let userNumber = +prompt('');
+        function myFunc(number, anotherFunc){
+          return anotherFunc(number);
+        }
+        function myCallback(value){
+          return Math.pow(value, value);
+        }
+        alert(myFunc(userNumber, myCallback));
       };
     </script>
     <script>
