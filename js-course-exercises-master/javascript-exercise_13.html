@@ -160,6 +160,17 @@ typeOf(val)
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
+        let val = prompt('Enter some value:');
+        function typeOfValue(value){
+          if(value === 'true' || value === 'false'){
+            return 'Boolean';
+          }else if(Number(value)){
+            return 'Number';
+          }else{
+            return 'String';
+          }
+        }
+        alert(typeOfValue(val));
       };
     </script>
     <script>
