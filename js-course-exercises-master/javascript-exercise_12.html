@@ -160,6 +160,16 @@ getLuckyNumber()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
+        function getLuckyNumber(){
+          let luckyNum = 100;
+          let userNumber = +prompt('Enter user number:');
+          if(userNumber === luckyNum){
+            alert('Won');
+          }else{
+            alert('Lost');  
+          }
+        }
+        getLuckyNumber();
       };
     </script>
     <script>
