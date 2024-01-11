@@ -172,6 +172,16 @@ sumNumbers()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
+        let sumNumbers = () => {
+          let totalSum = 0;
+          let iteration = +prompt('How many iterations: (0-1000)');
+          for(let i=1;i<=iteration;i++){
+            totalSum += i;
+          }
+          console.log(`The average is: ${totalSum/iteration}`);
+          console.log(`Total sum: ${totalSum}`);
+        }
+        sumNumbers();
       };
     </script>
     <script>
