@@ -195,19 +195,17 @@ if (daysUntilFriday === 0) {
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        let day = +prompt(" what day is it today (as number from 1-7).");
-        switch(day){
-          case 1:alert(`It's ${Math.abs(6-day)} days until friday!`);break;
-          case 2:alert(`It's ${Math.abs(6-day)} days until friday!`);break;
-          case 3:alert(`It's ${Math.abs(6-day)} days until friday!`);break;
-          case 4:alert(`It's ${Math.abs(6-day)} days until friday!`);break;
-          case 5:alert(`It's ${Math.abs(6-day)} days until friday!`);
-            alert('Friday is tomorrow');
-            break;
-          case 6:alert(`It's ${Math.abs(6-day)} days until friday!`);break;
-          case 7:alert(`It's ${day} days until friday!`);break;
-          default:alert(`is it maayan calendar day or what`);
-        }
+       let day = +prompt('Enter day as number (1-7):');
+       switch(day){
+        case 1: alert(`It's ${6 - day} Until Friday`);break;
+        case 2: alert(`It's ${6 - day} Until Friday`);break;
+        case 3: alert(`It's ${6 - day} Until Friday`);break;
+        case 4: alert(`It's ${6 - day} Until Friday`);break;
+        case 5: alert(`It's ${6 - day} Until Friday`);alert("Friday is tomorrow!");break;
+        case 6: alert(`It's ${6 - day} Until Friday`);break;
+        case 7: alert(`It's ${6 - 0} Until Friday`);break;
+        default:alert("is it maayan calendar day or what?");break;
+       }
       };
     </script>
     <script>
