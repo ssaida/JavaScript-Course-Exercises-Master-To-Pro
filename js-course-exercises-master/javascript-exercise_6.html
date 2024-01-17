@@ -155,14 +155,15 @@ if (drivingExp < 3) {
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-        let yearsOfDriving = +prompt("How many years you've been driving:");
-        if(yearsOfDriving < 3){
-          alert('Young');
-        }else if(yearsOfDriving >=3 && yearsOfDriving < 6){
-          alert('Shape some sidewalks')
-        }else{
-          alert('Private driver')
-        }
+       // TODO
+       let drivingYears = +prompt("How many years you'v been driving");
+       if(drivingYears < 3){
+        alert('Young');
+       }else if(drivingYears >= 3 && drivingYears < 6){
+        alert("You shape some sidewalks don't you?");
+       }else{
+        alert("can you be my private driver please?");
+       }
       };
     </script>
     <script>
