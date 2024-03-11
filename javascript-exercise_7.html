@@ -154,15 +154,15 @@ console.log('Final bitcoin balance is: ', btcAmount)
       const onSolution = () => {
       // TODO
         let btcAmount = +prompt('How many bitcoins youve been saved?');
-        if(btcAmount > 0){
+        if(btcAmount){
           let withdraw = +prompt('How many bitcoins would you like to withdraw:');
-          if(withdraw < btcAmount){
+          if(btcAmount <  withdraw){
+            alert('Insuffucuent balance');
+          }else{
             btcAmount -= withdraw
           }
-          alert(`New Balance is ${btcAmount}`);
-        }else{
-          alert('Insuffucuent balance');
         }
+        alert(`New Balance is ${btcAmount}`);
       };
     </script>
     <script>
