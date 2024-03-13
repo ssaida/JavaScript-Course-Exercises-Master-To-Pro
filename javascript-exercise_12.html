@@ -160,7 +160,19 @@ getLuckyNumber()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-      
+      function getLuckyNumber(){
+        let luckyNum = 37;
+        let userNumber = +prompt('Enter a number:');
+        if(luckyNum === userNumber){
+          return 'wow you win the game!';
+        }else{
+          return 'Maybe next time';
+        }
+      }
+      function init(){
+        alert(getLuckyNumber());
+      }
+      init();
       };
     </script>
     <script>
