@@ -162,7 +162,20 @@ getUserAge()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-       
+       function isUserAllowedWatching(userAge){
+        return userAge > 13
+       }
+       function getUserAge(){
+        let age = +prompt('Enter age:');
+        let isAllowedWatching = isUserAllowedWatching(age);
+        return isAllowedWatching ? 'Allowed' : 'Not Allowed';
+        
+       }
+       function init(){
+        let allowed = getUserAge();
+        alert(allowed);
+       }
+       init();
       };
     </script>
     <script>
