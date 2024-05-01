@@ -1,1 +1,1 @@
-# js-course-exercises-master
+# Javascript-Course-Master-Exercises
