@@ -156,8 +156,12 @@ if (drivingExp < 3) {
     <script>
       const onSolution = () => {
        // TODO
-       
-       
+     let yearsOfDriving = +prompt('Enter years of driving:');
+     if(yearsOfDriving < 3)
+        alert('Young driver');
+    else if(yearsOfDriving >= 3 && yearsOfDriving < 6)
+        alert('Side walk you!');
+      else alert('Can you be my private driver please?');
       };
     </script>
     <script>

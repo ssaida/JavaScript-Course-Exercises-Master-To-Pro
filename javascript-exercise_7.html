@@ -140,9 +140,7 @@ console.log('Final bitcoin balance is: ', btcAmount)
             <div class="custom-button">לשאלה הבאה ></div>
           </a>
         </div>
-
-        <div class="lg">שאלות</div>
-        <div class="questions-list lg"></div>
+ stions-list lg"></div>
       </div>
     </section>
 
@@ -153,8 +151,16 @@ console.log('Final bitcoin balance is: ', btcAmount)
     <script>
       const onSolution = () => {
       // TODO
-       
-      };
+        let btcAmount = +prompt('Enter BTC Amount:');
+        if(btcAmount){
+          let withdraw = +prompt('Enter withdraw amount');
+          if(withdraw > btcAmount)
+            alert('Insufficient balance');
+          else
+            btcAmount -= withdraw;
+          alert(`Final balance is ${btcAmount}`);
+        }
+    }
     </script>
     <script>
       addLinksToAllExercise(47, "javascript");
