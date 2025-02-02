@@ -147,9 +147,9 @@ getUserAge()
           </a>
           <a href="./javascript-exercise_12.html">
             <div class="custom-button">לשאלה הבאה ></div>
-          </a>
+          </a> 
         </div>
-
+   
         <div class="lg">שאלות</div>
         <div class="questions-list lg"></div>
       </div>  
@@ -162,20 +162,19 @@ getUserAge()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-       function isUserAllowedWatching(userAge){
-        return userAge > 13
-       }
-       function getUserAge(){
-        let age = +prompt('Enter age:');
-        let isAllowedWatching = isUserAllowedWatching(age);
-        return isAllowedWatching ? 'Allowed' : 'Not Allowed';
+        function isAllowedWatching(userAge){
+          if(userAge > 13)
+            return true;
+          return false;
+        }
+        function getUserAge(){
+          let age = +prompt('Enter Age:');
+          if(isAllowedWatching(age))
+            alert('This user is allowed to watch');
+          else alert('This user is allowed NOT to watch');
+        }
+        getUserAge();
         
-       }
-       function init(){
-        let allowed = getUserAge();
-        alert(allowed);
-       }
-       init();
       };
     </script>
     <script>
