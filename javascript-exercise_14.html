@@ -154,21 +154,21 @@ myFunc(userNumber, myCallback)
       </div>
     </section>
 
-    <script src="src/menu.min.js"></script>
+    <script src="src/menu.min.js"></script> 
     <script src="src/util.min.js"></script>
 
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-        /* todo remove this line and start your answer */
-       let userNumber = +prompt('Enter a number:');
-       function myFunc(number, anotherFunc){
+      // TODO
+      let userNumber = +prompt('Enter user number:');
+      function myFunc(number, anotherFunc){
         return anotherFunc(number);
-       }
-       function myCallback(number){
-        return Math.pow(number, 2);
-       }
-       alert(myFunc(userNumber, myCallback));
+      }
+      function pow2(num){
+        return Math.pow(num, 2);
+      }
+      alert(myFunc(userNumber, pow2));
       };
     </script>
     <script>
