@@ -118,7 +118,7 @@
               console.log(numB , ' with the power of ', expo , ' is:', numB ** expo)
             </code>
 					</pre>
-        </div>
+        </div> 
         <div class="navigation-buttons">
           <a href="javascript-exercise_2.html">
             <div class="custom-button">לשאלה הבאה ></div>
@@ -129,13 +129,17 @@
       </div>
     </section>
 
-    <script src="src/menu.min.js"></script>
+    <script src="src/menu.min.js"></script>   
     <script src="src/util.min.js"></script> 
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-      //  TODO
-      
+        //  TODO
+      let numA = +prompt('Enter num A:');
+      alert(`The power value of ${numA} is ${Math.pow(numA, 2)}`);
+      let numB = +prompt('Enter num B:');
+      let expo = +prompt('Enter expo:');
+      alert(`${numB} with exponent power of ${expo} is ${Math.pow(numB, expo)}`);
       }
     </script>
     <script>
