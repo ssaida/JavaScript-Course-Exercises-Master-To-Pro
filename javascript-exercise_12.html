@@ -159,20 +159,17 @@ getLuckyNumber()
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-        /* todo remove this line and start your answer */
-      function getLuckyNumber(){
-        let luckyNum = 37;
-        let userNumber = +prompt('Enter a number:');
-        if(luckyNum === userNumber){
-          return 'wow you win the game!';
-        }else{
-          return 'Maybe next time';
+      // TODO
+        function getLuckyNumber(){
+          let luckyNum = +prompt('Enter lucky number:');
+          let userNumber = +prompt('Guess a number:');
+          if(userNumber === luckyNum)
+            alert('Both numbers are equal!');
+          else if(userNumber > luckyNum)
+            alert('User number is bigger!');
+          else alert('Lucky number is bigger');
         }
-      }
-      function init(){
-        alert(getLuckyNumber());
-      }
-      init();
+        getLuckyNumber();
       };
     </script>
     <script>
