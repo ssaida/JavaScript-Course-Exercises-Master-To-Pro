@@ -190,7 +190,28 @@ init();
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
+        const countChars = word => {
+          let a =  b= c = 0;
+          let otherChars = 0;
+          for(let i=0;i<word.length;i++){
+            if(word[i] === 'a')
+              a++;
+            else if(word[i] === 'b')
+              b++;
+            else if(word[i] === 'c')
+              c++;
+            else otherChars++;
+          }
+          return {letterA:a, letterB:b, letterC:c, other:otherChars};
+        }
+        const init = () => {
+          const randomSenrence = prompt('Enter a random sentence:');
+          let countA, countB, countC = 0;
+          let result = countChars(randomSenrence);
+          console.log(result);
+        }
         
+        init();
       };
     </script>
     <script>
