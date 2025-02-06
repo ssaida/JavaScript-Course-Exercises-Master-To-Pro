@@ -146,7 +146,11 @@ while (!isRightAnswer) {
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-     
+        let answer = prompt('Are we there yet?');
+        while(answer !== 'yes'){
+          alert('Try again');
+          answer = prompt('Are we there yet?');
+        }
       };
     </script>
     <script>

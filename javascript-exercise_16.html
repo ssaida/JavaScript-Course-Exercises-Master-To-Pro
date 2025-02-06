@@ -181,8 +181,36 @@ init()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-        
+       const rouletteMaxNumbers = 36;
+       
+       const oddOrEven = number => number%2 ? 'Odd' : 'Even';
 
+       const printRouletteNumbers = () => {
+        for(let i=0;i<=rouletteMaxNumbers;i++){
+          console.log(`Roulette number ${i} is ${oddOrEven(i)}`);
+        }
+       }
+
+       const getRandomNumber = (min, max) => {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random()) * (max - min + 1) + min;
+       }
+
+       const init = () => {
+        printRouletteNumbers();
+        const luckyNumber = getRandomNumber(0, 36);
+        const userLuckyNumber = +prompt('Enter lucky number:');
+        console.log(`User number was: ${userLuckyNumber}`);
+        console.log(`Lucky number: ${luckyNumber}`);
+        if(luckyNumber === userLuckyNumber){
+          console.log('WON');
+        }else{
+          console.log('Lost');
+        }
+       }
+       
+       init();
       };
     </script>
     <script>

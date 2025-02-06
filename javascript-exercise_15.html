@@ -172,9 +172,17 @@ sumNumbers()
     <script>
       const onSolution = () => {
         /* todo remove this line and start your answer */
-       function sumNumbers(){
-        let iteration = +prompt('How many iteration to run?');
-       }
+        const sumNumbers = () => {
+          let totalSum = 0;
+          let numOfIterations = +prompt('Enter how many iterations (1 - 1000):');
+          for(let i=0;i<=numOfIterations;i++){
+            totalSum += i;
+            console.log(i);
+          }
+          console.log(`Average: ${totalSum / numOfIterations}`);
+          console.log(`Total Sum: ${totalSum}`);
+        }
+        sumNumbers();
       };
     </script>
     <script>
